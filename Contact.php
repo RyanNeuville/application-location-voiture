@@ -11,24 +11,7 @@
 </head>
 
 <body>
-
-    <!-- En-tête -->
-    <header>
-        <div class="logo"><span><i class="fas fa-car"></i></span><strong>AUTO-TECH</strong></div>
-        <nav>
-            <ul>
-                <li><a href="index.php" class="active"><i class="fas fa-home"></i> ACCUEIL</a></li>
-                <li><a href="Apropos.php">A PROPOS</a></li>
-                <li><a href="Vehicules.php">VEHICULES</a></li>
-                <li><a href="Blog.php">BLOG</a></li>
-                <li><a href="Contact.php">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="actions">
-
-            <button class="btn logout">Déconnexion</button>
-        </div>
-    </header>
+    <?php include 'partials/nav.php'; ?>
 
     <!-- Contenu principal -->
     <main>
@@ -50,12 +33,8 @@
     </main>
 
     <!-- Pied de page -->
-    <footer>
-        <p>© 2025 Justhire. Tous droits réservés.</p>
-    </footer>
-
+    <?php include 'partials/footer.php'; ?>
 </body>
-
 </html>
 
 <style>
@@ -89,14 +68,5 @@
 
     footer {
         border-radius: 10px;
-    }
-
-    header {
-        border-radius: 5px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-        color: orange;
     }
 </style>

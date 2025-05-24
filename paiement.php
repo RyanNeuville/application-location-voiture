@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <?php include 'partials/nav.php'; ?>
     <div class="payment-container">
         <h2>Paiement de la Réservation</h2>
         <p>Montant à payer : <strong>€250</strong></p>
@@ -38,12 +39,8 @@
         </form>
     </div>
     <!-- Pied de page -->
-    <footer>
-        <p>© 2025 Justhire. Tous droits réservés.</p>
-    </footer>
-
+    <?php include 'partials/footer.php'; ?>
 </body>
-
 </html>
 
 <style>
@@ -53,14 +50,5 @@
 
     footer {
         border-radius: 10px;
-    }
-
-    header {
-        border-radius: 5px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-        color: orange;
     }
 </style>

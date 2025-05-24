@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -11,23 +11,7 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="logo"><strong>AUTO-TECH</strong></div>
-        <nav>
-            <ul>
-                <li><a href="index.php">ACCUEIL</a></li>
-                <li><a href="Apropos.php">A PROPOS</a></li>
-                <li><a href="Vehicules.php" class="active">VEHICULES</a></li>
-                <li><a href="Blog.php">BLOG</a></li>
-                <li><a href="Contact.php">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="actions">
-
-            <button class="btn logout">Déconnexion</button>
-        </div>
-    </header>
+    <?php include 'partials/nav.php'; ?>
 
     <main>
         <h1 class="page-title" style="color:white;"> 🚘 Vehicules 🚘</h1>
@@ -122,38 +106,25 @@
     </main>
 
     <!-- Pied de page -->
-    <footer>
-        <p>© 2025 Justhire. Tous droits réservés.</p>
-    </footer>
-
+    <?php include 'partials/footer.php'; ?>
 </body>
-
 </html>
 
 <style>
-    
     body {
-        padding: 5px;
-        color: #333; /* Couleur de texte principale */
+        background: #fdfdfb;
+        color: #333;
         line-height: 1.6;
-        background-image: url(images/auto-2179220.jpg);
+        background-image: url(images/car-4825631.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         transition: background-color 0.3s ease;
         height:800px;
+        padding: 5px;
         object-fit:cover;
     }
 
     footer {
         border-radius: 10px;
-    }
-
-    header {
-        border-radius: 5px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-        color: orange;
     }
 </style>
